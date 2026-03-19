@@ -1,0 +1,10 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Kontaktnachrichten: jeder darf schreiben, nur Admins duerfen lesen
+    match /messages/{messageId} {
+      allow create: if true;
+      allow read, update, delete: if false;
+    }
+  }
+}

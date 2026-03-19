@@ -21,7 +21,7 @@
     <main>
         <section id="home" class="hero">
             <h1>Willkommen auf meiner Test-Website</h1>
-            <p>Gehostet mit GitHub &amp; Netlify</p>
+            <p>Gehostet mit GitHub &amp; Firebase</p>
             <button id="cta-btn">Mehr erfahren</button>
         </section>
 
@@ -30,11 +30,11 @@
             <div class="cards">
                 <div class="card">
                     <h3>Schnell</h3>
-                    <p>Netlify liefert deine Seite blitzschnell aus einem globalen CDN.</p>
+                    <p>Firebase liefert deine Seite blitzschnell aus einem globalen CDN.</p>
                 </div>
                 <div class="card">
                     <h3>Einfach</h3>
-                    <p>Push zu GitHub und Netlify deployed automatisch.</p>
+                    <p>Push zu GitHub und Firebase deployed automatisch.</p>
                 </div>
                 <div class="card">
                     <h3>Kostenlos</h3>
@@ -46,18 +46,18 @@
         <section id="contact" class="contact">
             <h2>Kontakt</h2>
             <form id="contact-form">
-                <input type="text" placeholder="Name" required>
-                <input type="email" placeholder="E-Mail" required>
-                <textarea placeholder="Nachricht" rows="4" required></textarea>
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="email" id="email" placeholder="E-Mail" required>
+                <textarea id="message" placeholder="Nachricht" rows="4" required></textarea>
                 <button type="submit">Senden</button>
             </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 TestSite. Gehostet auf Netlify.</p>
+        <p>&copy; 2026 TestSite. Gehostet auf Firebase.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
 </body>
 </html>
